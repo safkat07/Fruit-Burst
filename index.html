@@ -33,52 +33,7 @@
 
 <body class="container mx-auto">
     <!-- header section stars  -->
-    <header class="lg:container  mx-auto mt-5">
-        <div class=" lg:text-white lg:mx-10 lg:px-8 ">
-            <div class=" navbar lg:bg-[#F85559] rounded-full lg:flex lg:flex-row  justify-center mx-auto px-8">
-                <div class="navbar-start ">
-                    <div class="dropdown ">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 20 25"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class=" text-black menu menu-sm  border dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
-                    </div>
-                    <div class="   ">
-                        <ul class=" hidden lg:flex justify-between gap-10 ">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
-                    </div>
 
-                </div>
-
-                <div class="lg:flex  navbar-center  lg:gap-3  ">
-                    <img class=" w-8 lg:w-12 " src="./images/logo.png" alt="">
-                    <h2 class=" text-xl lg:text-2xl font-bold">Fruit Brust</h2>
-                </div>
-
-                <div class=" navbar-end hidden lg:flex lg:relative">
-                    <input type="text" placeholder="search here"
-                        class=" input border-none w-full max-w-xs rounded-full" />
-                    <div class="absolute">
-                        <i class=" text-black text-xl -ml-10  fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <!-- header section ends  -->
 
 
@@ -207,7 +162,8 @@
                 <!-- counter ends  -->
             </div>
             <!-- image div starts -->
-            <div class="grid grid-cols-1 md:grid-cols-2 pt-5 lg:grid-cols-4 justify-center my-16 gap-5 lg:gap-5 md:gap-2 ">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 pt-5 lg:grid-cols-4 justify-center my-16 gap-5 lg:gap-5 md:gap-2 ">
                 <!-- box-1  -->
                 <div class="border rounded-md justify-center text-center py-10 space-y-6 lg:mx-0 mx-10  ">
                     <img class=" mx-auto " src="./images/fruit6.png" alt="">
@@ -221,7 +177,33 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h3> Details</h3>
+                    <div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_5.showModal()">Details</button>
+                        <dialog id="my_modal_5" class="modal modal-middle sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                              <div class="flex justify-center">
+                                <div>
+                                    <img class="mx-auto" src="./images/fruit6.png" alt="">
+                                    <h3 class="font-bold text-lg mt-2">Apples</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                   </div>
+                              </div>
+                                <div class="modal-action flex justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
                 </div>
                 <!-- box-2  -->
                 <div class="border rounded-md justify-center text-center py-10 space-y-6 lg:mx-0 mx-10  ">
@@ -235,7 +217,33 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h3> Details</h3>
+                    <div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_6.showModal()">Details</button>
+                        <dialog id="my_modal_6" class="modal modal-middle sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                              <div class="flex justify-center">
+                                <div>
+                                    <img class="mx-auto" src="./images/fruit7.png" alt="">
+                                    <h3 class="font-bold text-lg mt-2">Orange</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                   </div>
+                              </div>
+                                <div class="modal-action flex justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
                 </div>
                 <!-- box-3 -->
                 <div class="border rounded-md justify-center text-center py-10 space-y-6 lg:mx-0 mx-10  ">
@@ -249,7 +257,33 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h3> Details</h3>
+                    <div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_7.showModal()">Details</button>
+                        <dialog id="my_modal_7" class="modal modal-middle sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                              <div class="flex justify-center">
+                                <div>
+                                    <img class="mx-auto" src="./images/fruit8.png" alt="">
+                                    <h3 class="font-bold text-lg mt-2">Red Dragon</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                   </div>
+                              </div>
+                                <div class="modal-action flex justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
                 </div>
                 <!-- box-4  -->
                 <div class="border rounded-md justify-center text-center py-10 space-y-6 lg:mx-0 mx-10  ">
@@ -263,7 +297,33 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h3> Details</h3>
+                    <div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_9.showModal()">Details</button>
+                        <dialog id="my_modal_9" class="modal modal-middle sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                              <div class="flex justify-center">
+                                <div>
+                                    <img class="mx-auto" src="./images/fruit9.png" alt="">
+                                    <h3 class="font-bold text-lg mt-2">Apples</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                   </div>
+                              </div>
+                                <div class="modal-action flex justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
 
                 </div>
 
@@ -385,7 +445,7 @@
                 <img class=" mx-auto h-[300px] " src="./images/whychoose1.png" alt="">
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:h-[400px] mb-20">
-                
+
                 <!--letf text div  -->
                 <!-- 1st text div  -->
                 <div class="flex flex-col justify-center items-center space-y-10 mb-10 md:mb-0 lg:mb-0">
@@ -461,14 +521,6 @@
     </main>
 
 
-
-
-
-
-
-
-
-
     <!-- footer section starts  -->
     <footer class=" container mx-auto footer footer-center p-10 space-y-10 bg-[#121212] text-primary-content  py-10 ">
         <div>
@@ -499,5 +551,4 @@
     </footer>
     <!-- footer section ends  -->
 </body>
-
 </html>
